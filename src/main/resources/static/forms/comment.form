@@ -1,0 +1,36 @@
+{
+  "components": [
+    {
+      "label": "Your comment",
+      "type": "textfield",
+      "id": "Field_11g8wxd",
+      "key": "comment",
+      "description": "Write your comment",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Rating",
+      "type": "number",
+      "id": "Field_114lqoy",
+      "key": "rating",
+      "description": "Write your rating",
+      "validate": {
+        "min": 1,
+        "max": 5,
+        "required": true
+      },
+      "defaultValue": 1
+    }
+  ],
+  "type": "default",
+  "id": "Form_107hs61",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.0.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.0.0"
+  },
+  "schemaVersion": 4
+}

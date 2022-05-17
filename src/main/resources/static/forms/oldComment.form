@@ -1,0 +1,25 @@
+{
+  "components": [
+    {
+      "label": "Your comment",
+      "type": "textfield",
+      "id": "Field_0krz1b2",
+      "key": "oldComment"
+    },
+    {
+      "label": "Do you want to edit your comment?",
+      "type": "checkbox",
+      "id": "Field_0hvmmeb",
+      "key": "edit"
+    }
+  ],
+  "type": "default",
+  "id": "Form_107hs61",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.0.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.0.0"
+  },
+  "schemaVersion": 4
+}

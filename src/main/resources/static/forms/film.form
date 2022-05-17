@@ -1,0 +1,40 @@
+{
+  "components": [
+    {
+      "values": [
+        {
+          "value": "riverdale",
+          "label": "riverdale"
+        },
+        {
+          "value": "euphoria",
+          "label": "euphoria"
+        },
+        {
+          "label": "titanic",
+          "value": "titanic"
+        }
+      ],
+      "label": "Film",
+      "type": "select",
+      "id": "Field_0dyqtnq",
+      "key": "film",
+      "description": "Choose the film"
+    },
+    {
+      "label": "do you have a comment?",
+      "type": "checkbox",
+      "id": "Field_1piny3x",
+      "key": "oldComment"
+    }
+  ],
+  "type": "default",
+  "id": "Form_107hs61",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.0.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.0.0"
+  },
+  "schemaVersion": 4
+}

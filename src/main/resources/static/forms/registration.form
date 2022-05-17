@@ -1,0 +1,34 @@
+{
+  "components": [
+    {
+      "label": "Email",
+      "type": "textfield",
+      "id": "Field_16zr8e0",
+      "key": "emailReg",
+      "description": "Write your email"
+    },
+    {
+      "label": "Password",
+      "type": "textfield",
+      "id": "Field_1hr34b7",
+      "key": "password",
+      "description": "Create your password"
+    },
+    {
+      "label": "Repeat password",
+      "type": "textfield",
+      "id": "Field_0m7kx74",
+      "key": "repeatPassword",
+      "description": "Repeat your password"
+    }
+  ],
+  "type": "default",
+  "id": "Form_107hs61",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.0.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.0.0"
+  },
+  "schemaVersion": 4
+}
