@@ -1,4 +1,4 @@
-package com.example.workflow.domain;
+package com.example.workflow.domain.User;
 
 import javax.persistence.*;
 
