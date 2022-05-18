@@ -1,0 +1,18 @@
+{
+  "components": [
+    {
+      "text": "${AuthorizationFailed}",
+      "type": "text",
+      "id": "Field_0hb4d47"
+    }
+  ],
+  "type": "default",
+  "id": "Form_0say03l",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.0.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.0.0"
+  },
+  "schemaVersion": 4
+}

@@ -16,7 +16,7 @@ spring.datasource.username: postgres
 spring.datasource.password: password
 
 spring.jpa.database: POSTGRESQL
-#spring.jpa.hibernate.ddl-auto:none
+spring.jpa.hibernate.ddl-auto: update
 
 
 camunda.bpm.admin-user:

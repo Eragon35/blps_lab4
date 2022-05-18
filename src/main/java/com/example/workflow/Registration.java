@@ -1,7 +1,7 @@
 package com.example.workflow;
 
-import com.example.workflow.domain.User;
-import com.example.workflow.domain.UserRepository;
+import com.example.workflow.domain.User.User;
+import com.example.workflow.domain.User.UserRepository;
 import org.camunda.bpm.engine.delegate.BpmnError;
 import org.camunda.bpm.engine.delegate.DelegateExecution;
 import org.camunda.bpm.engine.delegate.JavaDelegate;

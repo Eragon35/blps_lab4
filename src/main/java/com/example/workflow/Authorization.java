@@ -1,7 +1,7 @@
 package com.example.workflow;
 
-import com.example.workflow.domain.User;
-import com.example.workflow.domain.UserRepository;
+import com.example.workflow.domain.User.User;
+import com.example.workflow.domain.User.UserRepository;
 import org.camunda.bpm.engine.delegate.BpmnError;
 import org.camunda.bpm.engine.delegate.DelegateExecution;
 import org.camunda.bpm.engine.delegate.JavaDelegate;
@@ -34,11 +34,11 @@ public class Authorization implements JavaDelegate {
                 userId = user.getId().toString();
             } else {
                 userId = "-1";
-                throw new BpmnError("authorizationFailed", "Wrong passwords");
+                throw new BpmnError("AuthorizationFailed", "Wrong passwords");
             }
         } else {
             userId = "-1";
-            throw new BpmnError("authorizationFailed", "User with this login not found");
+            throw new BpmnError("AuthorizationFailed", "User with this login not found");
         }
 
         delegateExecution.setVariable("userId", userId);

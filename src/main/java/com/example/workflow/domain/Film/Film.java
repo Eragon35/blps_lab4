@@ -12,6 +12,10 @@ public class Film {
     @SequenceGenerator(name="token_seq", sequenceName="token_seq", allocationSize=1)
     private Long id;
 
+    public Long getId() {
+        return id;
+    }
+
     @Column(name = "name")
     private String name;
 }

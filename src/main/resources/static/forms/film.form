@@ -20,12 +20,6 @@
       "id": "Field_0dyqtnq",
       "key": "film",
       "description": "Choose the film"
-    },
-    {
-      "label": "do you have a comment?",
-      "type": "checkbox",
-      "id": "Field_1piny3x",
-      "key": "oldComment"
     }
   ],
   "type": "default",
