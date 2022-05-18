@@ -1,0 +1,33 @@
+{
+  "components": [
+    {
+      "values": [
+        {
+          "label": "Value",
+          "value": "value"
+        }
+      ],
+      "label": "New comments",
+      "type": "select",
+      "id": "Field_1h1r9st",
+      "key": "commentCheck",
+      "defaultValue": "<none>",
+      "description": "choose one comment"
+    },
+    {
+      "label": "is Active",
+      "type": "checkbox",
+      "id": "Field_12yzv0j",
+      "key": "isActive"
+    }
+  ],
+  "type": "default",
+  "id": "Form_107hs61",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.0.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.0.0"
+  },
+  "schemaVersion": 4
+}

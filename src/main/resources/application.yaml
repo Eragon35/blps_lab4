@@ -1,5 +1,6 @@
-#spring.datasource.platform: postgres
-#spring.datasource.driverClassName: org.postgresql.Driver
+spring.datasource.platform: postgres
+spring.datasource.driverClassName: org.postgresql.Driver
+spring.jpa.hibernate.ddl-auto: none
 #spring.datasource.url: jdbc:postgresql://localhost:5432/postgres
 #spring.datasource.username: postgres
 #spring.datasource.password: password
@@ -11,14 +12,16 @@
 #      hibernate:
 #        ddl-auto: none
 
-spring.datasource.url: jdbc:postgresql://localhost:5432/postgres
-spring.datasource.username: postgres
-spring.datasource.password: password
+spring.datasource.url: jdbc:postgresql://ec2-52-212-228-71.eu-west-1.compute.amazonaws.com:5432/d6hqja97vjpg9d
+
+spring.datasource.username: jvadxhtdvwqtdc
+spring.datasource.password: d6hqja97vjpg9d
 
 spring.jpa.database: POSTGRESQL
-#spring.jpa.hibernate.ddl-auto:none
 
 
 camunda.bpm.admin-user:
   id: demo
   password: demo
+server:
+  port: 10551
