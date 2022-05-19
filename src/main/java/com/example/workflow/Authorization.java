@@ -34,10 +34,12 @@ public class Authorization implements JavaDelegate {
                 userId = user.getId().toString();
             } else {
                 userId = "-1";
-                throw new BpmnError("AuthorizationFailed", "Wrong passwords");
+                delegateExecution.setVariable("authError", "Wrong password");
+                throw new BpmnError("AuthorizationFailed", "Wrong password");
             }
         } else {
             userId = "-1";
+            delegateExecution.setVariable("authError", "User with this login not found");
             throw new BpmnError("AuthorizationFailed", "User with this login not found");
         }
 

@@ -4,7 +4,15 @@
       "label": "Your comment",
       "type": "textfield",
       "id": "Field_0krz1b2",
-      "key": "oldComment"
+      "key": "oldComment",
+      "disabled": true
+    },
+    {
+      "label": "Your rating",
+      "type": "textfield",
+      "id": "Field_03cqd7d",
+      "key": "oldRating",
+      "disabled": true
     },
     {
       "label": "Do you want to edit your comment?",

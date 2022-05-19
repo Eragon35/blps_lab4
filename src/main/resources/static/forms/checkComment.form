@@ -1,15 +1,20 @@
 {
   "components": [
     {
-      "label": "Ошибка авторизации",
+      "label": "New comment",
       "type": "textfield",
-      "id": "Field_05tha7o",
-      "key": "authError",
-      "disabled": true
+      "id": "Field_1gplou0",
+      "key": "newComment"
+    },
+    {
+      "label": "is Active",
+      "type": "checkbox",
+      "id": "Field_12yzv0j",
+      "key": "isActive"
     }
   ],
   "type": "default",
-  "id": "Form_0say03l",
+  "id": "Form_107hs61",
   "executionPlatform": "Camunda Cloud",
   "executionPlatformVersion": "8.0.0",
   "exporter": {

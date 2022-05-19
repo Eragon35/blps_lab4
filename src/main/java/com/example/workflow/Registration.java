@@ -34,6 +34,7 @@ public class Registration implements JavaDelegate {
             userId = userRepository.save(user).getId().toString();
         } else {
             userId = "-1";
+            delegateExecution.setVariable("regError", "Passwords are not same");
             throw new BpmnError("registrationFailed", "Passwords are not same");
         }
 

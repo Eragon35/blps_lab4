@@ -18,20 +18,42 @@ public class Comment {
     @Column(name = "comment")
     private String comment;
 
+    @Column(name = "rating")
+    private Integer rating;
+
+    public String getComment() {
+        return comment;
+    }
+
+    public Integer getRating() {
+        return rating;
+    }
+
     @Column(name = "is_active")
-    private boolean isActive;
+    private Boolean isActive;
 
-//    @Column(name = "customer_id")
-    //private Long userId;
+    @Column(name = "customer_id")
+    private Long userId;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "customer_id")
-    private User user;
+    public Comment(String comment, Integer rating, Boolean isActive, Long userId, Long filmId) {
+        this.comment = comment;
+        this.rating = rating;
+        this.isActive = isActive;
+        this.userId = userId;
+        this.filmId = filmId;
+    }
+//    @ManyToOne(fetch = FetchType.LAZY)
+//    @JoinColumn(name = "customer_id")
+//    private User user;
 
-//    @Column(name = "film_id")
-//        private Long filmId;
+    @Column(name = "film_id")
+        private Long filmId;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "film_id")
-    private Film film;
+    public Comment() {
+
+    }
+
+//    @ManyToOne(fetch = FetchType.LAZY)
+//    @JoinColumn(name = "film_id")
+//    private Film film;
 }
