@@ -1,0 +1,20 @@
+{
+  "components": [
+    {
+      "label": "Ошибка регистрации",
+      "type": "textfield",
+      "id": "Field_1kyqfc8",
+      "key": "regError",
+      "disabled": true
+    }
+  ],
+  "type": "default",
+  "id": "Form_0rzpgc8",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.0.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.0.0"
+  },
+  "schemaVersion": 4
+}

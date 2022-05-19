@@ -1,4 +1,4 @@
-package com.example.workflow;
+package com.example.workflow.service;
 
 import com.example.workflow.domain.Comment.Comment;
 import com.example.workflow.domain.Comment.CommentRepository;
@@ -8,29 +8,36 @@ import org.camunda.bpm.engine.delegate.JavaDelegate;
 
 import javax.inject.Named;
 
-
 @Named
-public class SavingComment implements JavaDelegate {
+public class FindingComment implements JavaDelegate {
 
     private final FilmRepository filmRepository;
     private final CommentRepository commentRepository;
 
-    public SavingComment(FilmRepository filmRepository, CommentRepository commentRepository) {
+    public FindingComment(FilmRepository filmRepository, CommentRepository commentRepository) {
         this.filmRepository = filmRepository;
         this.commentRepository = commentRepository;
     }
 
-
     @Override
     public void execute(DelegateExecution delegateExecution) throws Exception {
+        // check if this user left a comment
         String filmName = (String) delegateExecution.getVariable("film");
-        String comment = (String) delegateExecution.getVariable("comment");
-        Integer rating = Integer.parseInt(delegateExecution.getVariable("rating").toString());
         Long userId = Long.parseLong(delegateExecution.getVariable("userId").toString());
+        System.out.println(userId);
         Long filmId = filmRepository.getFilmByName(filmName).getId();
 
-        Boolean isEditing = (Boolean) delegateExecution.getVariable("edit");
-        if (isEditing) { commentRepository.deleteByUserIdAndFilmId(userId, filmId); }
-        commentRepository.save(new Comment(comment, rating, null, userId, filmId));
+        //TODO: add check if filmId & userId is not null
+
+        Comment comment = commentRepository.findCommentByUserIdAndFilmId(userId, filmId);
+        if (comment != null) {
+            delegateExecution.setVariable("hasComment", true);
+            delegateExecution.setVariable("oldComment", comment.getComment());
+            delegateExecution.setVariable("oldRating", comment.getRating());
+        } else {
+            delegateExecution.setVariable("hasComment", false);
+            delegateExecution.setVariable("edit", false);
+
+        }
     }
 }

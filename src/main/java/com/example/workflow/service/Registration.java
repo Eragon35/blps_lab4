@@ -1,4 +1,4 @@
-package com.example.workflow;
+package com.example.workflow.service;
 
 import com.example.workflow.domain.User.User;
 import com.example.workflow.domain.User.UserRepository;
