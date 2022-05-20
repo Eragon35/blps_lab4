@@ -1,20 +1,14 @@
 {
   "components": [
     {
-      "label": "New comment",
       "type": "textfield",
-      "id": "Field_1gplou0",
-      "key": "newComment"
-    },
-    {
-      "label": "is Active",
-      "type": "checkbox",
-      "id": "Field_12yzv0j",
-      "key": "isActive"
+      "id": "Field_1d5igy4",
+      "key": "exit",
+      "disabled": true
     }
   ],
   "type": "default",
-  "id": "Form_107hs61",
+  "id": "Form_1bx0uzp",
   "executionPlatform": "Camunda Cloud",
   "executionPlatformVersion": "8.0.0",
   "exporter": {
