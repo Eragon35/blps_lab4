@@ -12,6 +12,8 @@ public interface CommentRepository extends JpaRepository<Comment, Long> {
 
     Long deleteByUserIdAndFilmId(Long userId, Long filmId);
 
+    Long deleteAllByIsActive(Boolean param);
+
     @Query(value = "select max(c.id) from Comment c where c.isActive is null ")
     Integer findLastUncheckedCommentId();
 
