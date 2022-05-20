@@ -5,6 +5,7 @@ import com.example.workflow.domain.User.UserRepository;
 import org.camunda.bpm.engine.delegate.BpmnError;
 import org.camunda.bpm.engine.delegate.DelegateExecution;
 import org.camunda.bpm.engine.delegate.JavaDelegate;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.inject.Named;
 
@@ -17,6 +18,7 @@ public class Registration implements JavaDelegate {
     }
 
     @Override
+    @Transactional
     public void execute(DelegateExecution delegateExecution) throws Exception {
         String userId = "";
         String login = "";

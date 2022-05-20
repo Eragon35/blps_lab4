@@ -5,6 +5,7 @@ import com.example.workflow.domain.Comment.CommentRepository;
 import com.example.workflow.domain.Film.FilmRepository;
 import org.camunda.bpm.engine.delegate.DelegateExecution;
 import org.camunda.bpm.engine.delegate.JavaDelegate;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.inject.Named;
 
@@ -22,6 +23,7 @@ public class SavingComment implements JavaDelegate {
 
 
     @Override
+    @Transactional
     public void execute(DelegateExecution delegateExecution) throws Exception {
         String filmName = (String) delegateExecution.getVariable("film");
         String comment = (String) delegateExecution.getVariable("comment");
