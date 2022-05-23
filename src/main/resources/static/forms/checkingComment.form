@@ -1,0 +1,26 @@
+{
+  "components": [
+    {
+      "label": "Комментарий для проверки",
+      "type": "textfield",
+      "id": "Field_0vjkf2z",
+      "key": "commentForCheck",
+      "disabled": true
+    },
+    {
+      "label": "Проходит валидацию",
+      "type": "checkbox",
+      "id": "Field_09gdr7n",
+      "key": "isActive"
+    }
+  ],
+  "type": "default",
+  "id": "Form_0cb23sr",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.0.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.17.0",
+  "schemaVersion": 4
+}

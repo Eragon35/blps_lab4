@@ -1,4 +1,4 @@
-package com.example.workflow;
+package com.example.workflow.service;
 
 import com.example.workflow.domain.Comment.Comment;
 import com.example.workflow.domain.Comment.CommentRepository;
